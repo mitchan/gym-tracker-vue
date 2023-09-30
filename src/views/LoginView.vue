@@ -9,6 +9,6 @@ function handleFormSubmit(data: LoginFormType) {
 
 <template>
   <div class="min-h-screen flex justify-center items-center">
-    <LoginForm @form-submit="handleFormSubmit($event)" register />
+    <LoginForm @form-submit="handleFormSubmit($event)" />
   </div>
 </template>

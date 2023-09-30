@@ -15,16 +15,14 @@
 </template>
 
 <script setup lang="ts">
-type TextFieldProps = {
+defineProps<{
   id: string
   name: string
   type?: 'text' | 'password'
   modelValue?: string
   label?: string
   disabled?: boolean
-}
-
-defineProps<TextFieldProps>()
+}>()
 
 const emit = defineEmits(['update:modelValue'])
 
